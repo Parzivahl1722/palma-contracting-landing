@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Palma Contracting | Roofing, Siding &amp; Gutters - Greater Boston Area</title>
+  <meta name="description" content="Licensed and insured roofing contractor serving the Greater Boston Area and NH since 2009. Cedar shake roofs, barn roofs, residential siding, and gutter services." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary":                  "#0F172A",
+            "primary-container":        "#253346",
+            "on-primary":               "#FFFFFF",
+            "on-primary-container":     "#B2BDCA",
+            "secondary":                "#334155",
+            "secondary-container":      "#3D5166",
+            "on-secondary":             "#FFFFFF",
+            "on-secondary-container":   "#CBD5E1",
+            "tertiary":                 "#F97316",
+            "tertiary-container":       "#C2410C",
+            "tertiary-dark":            "#9A3412",
+            "on-tertiary":              "#FFFFFF",
+            "on-tertiary-container":    "#FFF7ED",
+            "tertiary-fixed":           "#FFEDD5",
+            "tertiary-fixed-dim":       "#FED7AA",
+            "surface":                  "#F8FAFC",
+            "surface-bright":           "#F8FAFC",
+            "surface-dim":              "#D8DADC",
+            "surface-container-lowest": "#FFFFFF",
+            "surface-container-low":    "#F2F4F6",
+            "surface-container":        "#ECEEF0",
+            "surface-container-high":   "#E6E8EA",
+            "surface-container-highest":"#E0E3E5",
+            "surface-variant":          "#E0E3E5",
+            "on-surface":               "#191C1E",
+            "on-surface-variant":       "#42474F",
+            "on-background":            "#191C1E",
+            "background":               "#F8FAFC",
+            "inverse-surface":          "#2D3133",
+            "inverse-on-surface":       "#EFF1F3",
+            "inverse-primary":          "#BEC6E0",
+            "outline":                  "#727780",
+            "outline-variant":          "#C2C7D1",
+            "error":                    "#BA1A1A",
+            "error-container":          "#FFDAD6",
+            "on-error":                 "#FFFFFF",
+            "on-error-container":       "#93000A",
+            "surface-tint":             "#334155",
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg:      "0.25rem",
+            xl:      "0.5rem",
+            "2xl":   "1rem",
+            "3xl":   "1.5rem",
+            full:    "9999px",
+          },
+          fontFamily: {
+            headline: ["Manrope", "sans-serif"],
+            body:     ["Inter", "sans-serif"],
+            label:    ["Inter", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .editorial-shadow {
+      box-shadow: 0 40px 60px -15px rgba(15, 23, 42, 0.07);
+    }
+    .glass-nav {
+      background: rgba(248, 250, 252, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .anim-1 { animation: fadeUp 0.55s cubic-bezier(0.16,1,0.3,1) both; }
+    .anim-2 { animation: fadeUp 0.55s cubic-bezier(0.16,1,0.3,1) 0.1s both; }
+    .anim-3 { animation: fadeUp 0.55s cubic-bezier(0.16,1,0.3,1) 0.2s both; }
+    .anim-4 { animation: fadeUp 0.55s cubic-bezier(0.16,1,0.3,1) 0.3s both; }
+
+    /* Mobile menu */
+    @keyframes menuIn {
+      from { opacity: 0; transform: translateY(-8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    #mobile-menu { display: none; }
+    #mobile-menu.open {
+      display: flex;
+      animation: menuIn 0.2s cubic-bezier(0.16,1,0.3,1) both;
+    }
+
+    /* Bottom bar safe area */
+    @supports (padding-bottom: env(safe-area-inset-bottom)) {
+      .bottom-bar { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
+    }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased pb-20 md:pb-0">
+
+  <!-- ─── Navigation ──────────────────────────────────── -->
+  <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
+
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-7 h-7 rounded-lg bg-tertiary-container flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-on-tertiary-container text-[16px]" style="font-variation-settings: 'FILL' 1, 'wght' 700;">roofing</span>
+        </div>
+        <span class="text-[17px] font-headline font-extrabold text-primary tracking-tight">Palma Contracting</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#" class="text-tertiary font-headline font-bold border-b-2 border-tertiary pb-0.5 text-sm tracking-tight">Home</a>
+        <a href="#services" class="text-secondary hover:text-primary transition-colors font-headline font-semibold text-sm tracking-tight">Services</a>
+        <a href="#projects" class="text-secondary hover:text-primary transition-colors font-headline font-semibold text-sm tracking-tight">Portfolio</a>
+        <a href="#about" class="text-secondary hover:text-primary transition-colors font-headline font-semibold text-sm tracking-tight">About</a>
+        <a href="#areas" class="text-secondary hover:text-primary transition-colors font-headline font-semibold text-sm tracking-tight">Service Areas</a>
+      </div>
+
+      <!-- Desktop right actions -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="tel:7812589990" class="flex items-center gap-1.5 text-sm font-semibold text-secondary hover:text-primary transition-colors">
+          <span class="material-symbols-outlined text-[16px]">call</span>
+          (781) 258-9990
+        </a>
+        <a href="#contact" class="bg-tertiary-container text-on-tertiary-container px-5 py-2.5 rounded-xl font-headline font-bold text-sm hover:bg-tertiary-dark transition-colors">
+          Get a Quote
+        </a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-xl text-primary hover:bg-surface-container transition-colors" aria-label="Open menu" aria-expanded="false">
+        <span class="material-symbols-outlined" id="menu-icon">menu</span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ─── Mobile Menu Overlay ──────────────────────────── -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 flex-col bg-primary pt-20 px-6 pb-8 overflow-y-auto">
+    <nav class="flex flex-col gap-1 mb-8">
+      <a href="#" onclick="closeMobileMenu()" class="font-headline font-bold text-2xl text-surface py-3 border-b border-white/10 tracking-tight">Home</a>
+      <a href="#services" onclick="closeMobileMenu()" class="font-headline font-semibold text-2xl text-surface/80 py-3 border-b border-white/10 tracking-tight hover:text-surface transition-colors">Services</a>
+      <a href="#projects" onclick="closeMobileMenu()" class="font-headline font-semibold text-2xl text-surface/80 py-3 border-b border-white/10 tracking-tight hover:text-surface transition-colors">Portfolio</a>
+      <a href="#about" onclick="closeMobileMenu()" class="font-headline font-semibold text-2xl text-surface/80 py-3 border-b border-white/10 tracking-tight hover:text-surface transition-colors">About</a>
+      <a href="#areas" onclick="closeMobileMenu()" class="font-headline font-semibold text-2xl text-surface/80 py-3 border-b border-white/10 tracking-tight hover:text-surface transition-colors">Service Areas</a>
+    </nav>
+
+    <div class="flex flex-col gap-3 mt-auto">
+      <a href="tel:7812589990" onclick="closeMobileMenu()" class="flex items-center justify-center gap-3 w-full py-4 rounded-xl border border-white/20 font-headline font-bold text-surface text-lg">
+        <span class="material-symbols-outlined text-tertiary">call</span>
+        (781) 258-9990
+      </a>
+      <a href="#contact" onclick="closeMobileMenu()" class="flex items-center justify-center w-full py-4 rounded-xl bg-tertiary-container text-on-tertiary-container font-headline font-bold text-lg hover:bg-tertiary-dark transition-colors">
+        Get a Free Estimate
+      </a>
+    </div>
+  </div>
+
+  <!-- ─── Hero ─────────────────────────────────────────── -->
+  <header class="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+      <div class="lg:col-span-6 z-10">
+        <div class="anim-1 inline-flex items-center gap-2 px-3 py-1.5 bg-surface-container-high rounded-full mb-6">
+          <span class="material-symbols-outlined text-tertiary-container text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+          <span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">Licensed &amp; Insured - Greater Boston Area &amp; NH</span>
+        </div>
+
+        <h1 class="anim-2 font-headline text-5xl md:text-6xl lg:text-7xl font-extrabold text-primary leading-[1.07] tracking-tight mb-6">
+          Solid<br />
+          <span class="text-tertiary-container">Craftsmanship.</span><br />
+          Reliable Service.
+        </h1>
+
+        <p class="anim-3 text-lg text-on-surface-variant leading-relaxed mb-10 max-w-md">
+          With over 20 years of experience, Palma Contracting has been protecting homes and businesses throughout Greater Boston and New Hampshire since 2009.
+        </p>
+
+        <div class="anim-4 flex flex-wrap gap-4">
+          <a href="#contact" class="bg-tertiary-container text-on-tertiary-container px-8 py-4 rounded-xl font-headline font-bold text-base hover:bg-tertiary-dark transition-colors editorial-shadow">
+            Get a Free Estimate
+          </a>
+          <a href="#projects" class="flex items-center gap-2 px-8 py-4 rounded-xl font-headline font-semibold text-primary border border-outline-variant hover:bg-surface-container-low transition-colors text-base">
+            View Portfolio
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 relative">
+        <div class="relative z-10 rounded-2xl overflow-hidden aspect-[4/5] editorial-shadow">
+          <img
+            src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=900&q=80&fit=crop"
+            alt="Beautiful New England home with quality roofing by Palma Contracting"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <div class="absolute -bottom-10 -left-10 w-56 h-56 bg-tertiary/8 rounded-full blur-3xl pointer-events-none"></div>
+
+        <!-- Floating trust card - hidden on xs to prevent overflow -->
+        <div class="hidden sm:block absolute -top-6 -right-4 md:-right-8 z-20 bg-surface-container-lowest p-5 rounded-2xl editorial-shadow max-w-[200px]">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="font-headline font-black text-2xl text-primary">5-Star</span>
+          </div>
+          <p class="text-xs text-on-surface-variant font-medium leading-snug">Consistently rated by homeowners across Greater Boston.</p>
+        </div>
+
+        <!-- Floating stat card - hidden on xs to prevent overflow -->
+        <div class="hidden sm:block absolute -bottom-4 -left-4 md:-left-8 z-20 bg-primary p-5 rounded-2xl max-w-[170px]">
+          <p class="font-headline font-black text-3xl text-tertiary mb-0.5">20+</p>
+          <p class="text-xs text-on-primary-container font-semibold uppercase tracking-widest leading-snug">Years of<br />Experience</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── Trust Metrics ────────────────────────────────── -->
+  <section class="py-16 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="bg-surface-container-lowest p-7 rounded-2xl border-b-4 border-tertiary-container shadow-sm text-center">
+          <p class="font-headline font-black text-3xl text-primary mb-1">2009</p>
+          <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">In Business Since</p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-7 rounded-2xl border-b-4 border-tertiary-container shadow-sm text-center">
+          <p class="font-headline font-black text-3xl text-primary mb-1">Licensed</p>
+          <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">&amp; Fully Insured</p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-7 rounded-2xl border-b-4 border-tertiary-container shadow-sm text-center">
+          <p class="font-headline font-black text-3xl text-primary mb-1">8+</p>
+          <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Towns Served</p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-7 rounded-2xl border-b-4 border-tertiary-container shadow-sm text-center">
+          <p class="font-headline font-black text-2xl text-primary mb-1">References</p>
+          <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Available on Request</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Services ─────────────────────────────────────── -->
+  <section id="services" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+        <div class="max-w-2xl">
+          <p class="text-xs font-bold tracking-widest uppercase text-tertiary-container mb-4">What We Do</p>
+          <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary tracking-tight leading-tight mb-5">
+            Every Shingle.<br />Every Seam. Every Time.
+          </h2>
+          <p class="text-lg text-on-surface-variant leading-relaxed">
+            From cedar shake roofs to full siding replacements, we bring the same commitment to quality workmanship and environmental sustainability to every project.
+          </p>
+        </div>
+        <a href="#contact" class="flex items-center gap-2 text-tertiary-container font-bold group whitespace-nowrap text-sm">
+          Get a quote
+          <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Roofing -->
+        <div class="group bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow hover:-translate-y-2 transition-transform duration-300">
+          <div class="aspect-video relative overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop"
+              alt="Cedar shake and residential roofing by Palma Contracting"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="p-8">
+            <h3 class="font-headline font-bold text-xl mb-3 text-primary">Roofing</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+              Expert installation and repair for all roof types - cedar shake, barn roofs, and standard residential systems. Built to handle New England's toughest seasons.
+            </p>
+            <ul class="space-y-1.5 mb-6">
+              <li class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-container text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Cedar Shake Roofs
+              </li>
+              <li class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-container text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Barn &amp; Agricultural Roofs
+              </li>
+              <li class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-container text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Residential Roof Replacement
+              </li>
+            </ul>
+            <span class="text-[11px] font-black tracking-tight uppercase border-b-2 border-tertiary/30 pb-0.5 text-on-surface-variant">Residential &amp; Commercial</span>
+          </div>
+        </div>
+
+        <!-- Siding -->
+        <div class="group bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow hover:-translate-y-2 transition-transform duration-300">
+          <div class="aspect-video relative overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=700&q=80&fit=crop"
+              alt="Residential siding installation by Palma Contracting"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="p-8">
+            <h3 class="font-headline font-bold text-xl mb-3 text-primary">Siding</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+              Protect and refresh your home's exterior with quality siding installation. We help you choose materials that balance curb appeal, durability, and energy performance.
+            </p>
+            <ul class="space-y-1.5 mb-6">
+              <li class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-container text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Full Siding Replacement
+              </li>
+              <li class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-container text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Partial Repair &amp; Matching
+              </li>
+              <li class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-container text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Vinyl, Wood &amp; Fiber Cement
+              </li>
+            </ul>
+            <span class="text-[11px] font-black tracking-tight uppercase border-b-2 border-tertiary/30 pb-0.5 text-on-surface-variant">Residential</span>
+          </div>
+        </div>
+
+        <!-- Gutters -->
+        <div class="group bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow hover:-translate-y-2 transition-transform duration-300">
+          <div class="aspect-video relative overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80&fit=crop"
+              alt="Gutter installation and repair by Palma Contracting"
+              loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="p-8">
+            <h3 class="font-headline font-bold text-xl mb-3 text-primary">Gutters</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+              A properly functioning gutter system is your home's first defense against water damage. We install, repair, and clean to keep water moving where it should.
+            </p>
+            <ul class="space-y-1.5 mb-6">
+              <li class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-container text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Seamless Gutter Installation
+              </li>
+              <li class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-container text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Gutter Repair &amp; Resealing
+              </li>
+              <li class="flex items-center gap-2 text-xs text-on-surface-variant">
+                <span class="material-symbols-outlined text-tertiary-container text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Downspout Extensions
+              </li>
+            </ul>
+            <span class="text-[11px] font-black tracking-tight uppercase border-b-2 border-tertiary/30 pb-0.5 text-on-surface-variant">Residential &amp; Commercial</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Project Portfolio (Asymmetric Bento) ─────────── -->
+  <section id="projects" class="py-24 bg-primary">
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <p class="text-xs font-bold tracking-widest uppercase text-tertiary mb-3">Portfolio</p>
+          <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-surface tracking-tight leading-tight">
+            Our Work Across<br />Greater Boston.
+          </h2>
+        </div>
+        <a href="mailto:palmacontracting@gmail.com" class="flex items-center gap-2 text-tertiary font-bold group text-sm whitespace-nowrap">
+          Request references
+          <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:h-[680px]">
+
+        <!-- Feature left -->
+        <div class="md:col-span-8 md:row-span-2 relative group overflow-hidden rounded-2xl">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1100&q=80&fit=crop"
+            alt="Cedar shake roof installation - Waltham, MA"
+            loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
+          <div class="absolute bottom-8 left-8">
+            <p class="text-tertiary-fixed font-bold tracking-[0.2em] text-[10px] uppercase mb-2">Featured - Roofing</p>
+            <h3 class="font-headline text-2xl md:text-3xl font-extrabold text-white">Cedar Shake Roof</h3>
+            <p class="text-white/70 text-sm mt-1">Full replacement - Waltham, MA</p>
+          </div>
+        </div>
+
+        <!-- Top right -->
+        <div class="md:col-span-4 relative group overflow-hidden rounded-2xl min-h-[240px] md:min-h-0">
+          <img
+            src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?w=600&q=80&fit=crop"
+            alt="Residential siding project - Burlington, MA"
+            loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-primary/30 group-hover:bg-primary/15 transition-colors"></div>
+          <div class="absolute bottom-5 left-5">
+            <h4 class="font-headline text-base font-bold text-white">Residential Siding</h4>
+            <p class="text-white/65 text-xs mt-0.5">Full replacement - Burlington, MA</p>
+          </div>
+        </div>
+
+        <!-- Bottom right -->
+        <div class="md:col-span-4 relative group overflow-hidden rounded-2xl min-h-[240px] md:min-h-0">
+          <img
+            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80&fit=crop"
+            alt="Barn roof project - Concord, MA"
+            loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div class="absolute inset-0 bg-primary/30 group-hover:bg-primary/15 transition-colors"></div>
+          <div class="absolute bottom-5 left-5">
+            <h4 class="font-headline text-base font-bold text-white">Barn Roof</h4>
+            <p class="text-white/65 text-xs mt-0.5">Concord, MA</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── About ─────────────────────────────────────────── -->
+  <section id="about" class="py-24 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+      <div class="relative">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="rounded-xl overflow-hidden aspect-square editorial-shadow">
+              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&q=80&fit=crop" alt="Palma Contracting crew on site" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <div class="rounded-xl overflow-hidden aspect-[3/4] editorial-shadow">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80&fit=crop" alt="Cedar shake roof detail" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <div class="space-y-4 pt-10">
+            <div class="rounded-xl overflow-hidden aspect-[3/4] editorial-shadow">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80&fit=crop" alt="Roofing installation in progress" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+            <div class="rounded-xl overflow-hidden aspect-square editorial-shadow">
+              <img src="https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=500&q=80&fit=crop" alt="New England home exterior" loading="lazy" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-7">
+        <p class="text-xs font-bold tracking-widest uppercase text-tertiary-container">About Us</p>
+        <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-primary leading-tight tracking-tight">
+          Serving Greater Boston<br />since 2009.
+        </h2>
+        <p class="text-lg text-on-surface-variant leading-relaxed">
+          With over 20 years of experience, Dulio Palma and his crew have been bringing solid craftsmanship and reliable service to home and business owners throughout the Greater Boston Area and New Hampshire since 2009.
+        </p>
+        <p class="text-base text-on-surface-variant leading-relaxed">
+          We are committed to top quality workmanship and environmental sustainability for our clients and our planet. References are available upon request.
+        </p>
+
+        <div class="flex flex-col gap-4 pt-1">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+            </div>
+            <div>
+              <p class="font-headline font-bold text-primary text-sm">Licensed &amp; Insured</p>
+              <p class="text-on-surface-variant text-xs mt-0.5">Fully licensed roofing contractor operating in MA and NH.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-primary text-[20px]">eco</span>
+            </div>
+            <div>
+              <p class="font-headline font-bold text-primary text-sm">Sustainability-Focused</p>
+              <p class="text-on-surface-variant text-xs mt-0.5">Committed to quality workmanship and environmental responsibility.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-primary text-[20px]">location_on</span>
+            </div>
+            <div>
+              <p class="font-headline font-bold text-primary text-sm">Based in Waltham, MA</p>
+              <p class="text-on-surface-variant text-xs mt-0.5">314 Sibley Rd., Waltham, MA 02453</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-8 py-4 rounded-xl font-headline font-bold hover:bg-tertiary-dark transition-colors">
+          Get Your Free Estimate
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Testimonials ─────────────────────────────────── -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+      <div class="mb-14">
+        <p class="text-xs font-bold tracking-widest uppercase text-tertiary-container mb-3">Client Feedback</p>
+        <h2 class="font-headline text-4xl font-extrabold text-primary tracking-tight">What Our Clients Say</h2>
+        <div class="w-12 h-[3px] bg-tertiary-container mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <div class="relative bg-surface-container-low p-10 md:p-12 rounded-3xl">
+          <span class="material-symbols-outlined text-[80px] text-tertiary/15 absolute top-4 right-6 leading-none">format_quote</span>
+          <div class="flex gap-0.5 mb-5">
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <p class="text-lg md:text-xl text-primary font-medium italic leading-relaxed mb-8">
+            "Best contractor experience I've ever had. Highly recommend these guys. From the first conversation to discuss the job, to great communication during and an excellent cleanup job, everything went great. Estimate was accurate."
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-full bg-secondary-container flex items-center justify-center">
+              <span class="font-headline font-bold text-on-secondary-container text-sm">FF</span>
+            </div>
+            <div>
+              <p class="font-bold text-primary text-sm">Frank Fitzgerald</p>
+              <p class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold mt-0.5">Verified Google Review</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-surface-container-low p-10 md:p-12 rounded-3xl">
+          <span class="material-symbols-outlined text-[80px] text-tertiary/15 absolute top-4 right-6 leading-none">format_quote</span>
+          <div class="flex gap-0.5 mb-5">
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-tertiary text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <p class="text-lg md:text-xl text-primary font-medium italic leading-relaxed mb-8">
+            "The Palma gang did a great job. Middle of winter, freezing out and they got the job done. Replaced roof and installed new gutters all under two days."
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="w-11 h-11 rounded-full bg-tertiary-container flex items-center justify-center">
+              <span class="font-headline font-bold text-on-tertiary-container text-sm">EC</span>
+            </div>
+            <div>
+              <p class="font-bold text-primary text-sm">Eva Caissie</p>
+              <p class="text-[10px] text-on-surface-variant uppercase tracking-widest font-bold mt-0.5">Verified Google Review</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Additional reviews strip -->
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex items-start gap-4 p-6 bg-surface-container-low rounded-2xl">
+          <div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+            <span class="font-headline font-bold text-on-primary text-xs">PB</span>
+          </div>
+          <div>
+            <div class="flex gap-0.5 mb-1.5">
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="text-sm text-primary font-medium italic leading-relaxed mb-2">"Dulio and his crew always provide a first class job and a great customer experience!"</p>
+            <p class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Paul Baima &nbsp;·&nbsp; Verified Google Review</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-6 bg-surface-container-low rounded-2xl">
+          <div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+            <span class="font-headline font-bold text-on-primary text-xs">DF</span>
+          </div>
+          <div>
+            <div class="flex gap-0.5 mb-1.5">
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-tertiary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="text-sm text-primary font-medium italic leading-relaxed mb-2">"Palma was on time, very knowledgeable and very reasonably priced. The first meeting set the stage for a long-term work relationship."</p>
+            <p class="text-[11px] font-bold text-on-surface-variant uppercase tracking-wider">Dennis Fontecchio &nbsp;·&nbsp; Verified Google Review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Service Areas ─────────────────────────────────── -->
+  <section id="areas" class="py-20 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-10">
+        <div>
+          <p class="text-xs font-bold tracking-widest uppercase text-tertiary-container mb-3">Where We Work</p>
+          <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary tracking-tight">Service Areas</h2>
+        </div>
+        <p class="text-on-surface-variant text-sm max-w-sm leading-relaxed">
+          Serving the Greater Boston Area and Southern New Hampshire. Don't see your town? Call us - we may still be able to help.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-full text-sm font-semibold text-primary">Waltham</span>
+        <span class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-full text-sm font-semibold text-primary">Burlington</span>
+        <span class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-full text-sm font-semibold text-primary">Woburn</span>
+        <span class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-full text-sm font-semibold text-primary">Sudbury</span>
+        <span class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-full text-sm font-semibold text-primary">Somerville</span>
+        <span class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-full text-sm font-semibold text-primary">Newton</span>
+        <span class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-full text-sm font-semibold text-primary">Concord</span>
+        <span class="bg-surface-container-lowest border border-outline-variant px-4 py-2 rounded-full text-sm font-semibold text-primary">Wellesley</span>
+        <span class="bg-tertiary-container text-on-tertiary-container border border-transparent px-4 py-2 rounded-full text-sm font-bold">Greater Boston Area</span>
+        <span class="bg-tertiary-container text-on-tertiary-container border border-transparent px-4 py-2 rounded-full text-sm font-bold">New Hampshire</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ───────────────────────────────────────── -->
+  <section id="contact" class="py-24 bg-primary">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+      <div>
+        <p class="text-xs font-bold tracking-widest uppercase text-tertiary mb-4">Get in Touch</p>
+        <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-surface tracking-tight leading-tight mb-6">
+          Ready for your<br />free estimate?
+        </h2>
+        <p class="text-on-primary-container text-lg leading-relaxed mb-10 max-w-md">
+          Reach out and we'll schedule a free, no-obligation on-site assessment. We respond to all inquiries promptly.
+        </p>
+
+        <div class="space-y-6">
+          <div class="flex items-center gap-5">
+            <div class="w-11 h-11 rounded-xl bg-primary-container flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-on-primary-container text-[20px]">call</span>
+            </div>
+            <div>
+              <p class="text-xs text-on-primary-container uppercase tracking-widest font-bold mb-0.5">Phone</p>
+              <a href="tel:7812589990" class="text-surface text-lg font-headline font-semibold hover:text-tertiary transition-colors">(781) 258-9990</a>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-5">
+            <div class="w-11 h-11 rounded-xl bg-primary-container flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-on-primary-container text-[20px]">mail</span>
+            </div>
+            <div>
+              <p class="text-xs text-on-primary-container uppercase tracking-widest font-bold mb-0.5">Email</p>
+              <a href="mailto:palmacontracting@gmail.com" class="text-surface text-base font-semibold hover:text-tertiary transition-colors">palmacontracting@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-5">
+            <div class="w-11 h-11 rounded-xl bg-primary-container flex items-center justify-center flex-shrink-0">
+              <span class="material-symbols-outlined text-on-primary-container text-[20px]">location_on</span>
+            </div>
+            <div>
+              <p class="text-xs text-on-primary-container uppercase tracking-widest font-bold mb-0.5">Address</p>
+              <p class="text-surface text-base font-semibold">314 Sibley Rd., Waltham, MA 02453</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="bg-surface-container-lowest rounded-2xl p-8 md:p-10 editorial-shadow">
+        <h3 class="font-headline font-bold text-xl text-primary mb-6">Send Us a Message</h3>
+        <form class="space-y-5" action="mailto:palmacontracting@gmail.com" method="GET">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-secondary uppercase tracking-wider mb-1.5">First Name</label>
+              <input type="text" name="first_name" placeholder="Jane" class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm font-body focus:outline-none focus:ring-2 focus:ring-tertiary-container focus:border-transparent transition-shadow" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-secondary uppercase tracking-wider mb-1.5">Last Name</label>
+              <input type="text" name="last_name" placeholder="Smith" class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm font-body focus:outline-none focus:ring-2 focus:ring-tertiary-container focus:border-transparent transition-shadow" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-secondary uppercase tracking-wider mb-1.5">Phone</label>
+            <input type="tel" name="phone" placeholder="(781) 555-0100" class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm font-body focus:outline-none focus:ring-2 focus:ring-tertiary-container focus:border-transparent transition-shadow" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-secondary uppercase tracking-wider mb-1.5">Town / City</label>
+            <input type="text" name="city" placeholder="Waltham, Newton, Burlington..." class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm font-body focus:outline-none focus:ring-2 focus:ring-tertiary-container focus:border-transparent transition-shadow" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-secondary uppercase tracking-wider mb-1.5">Service Needed</label>
+            <select name="service" class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm font-body focus:outline-none focus:ring-2 focus:ring-tertiary-container focus:border-transparent transition-shadow">
+              <option value="">Select a service</option>
+              <option>Roofing - Cedar Shake</option>
+              <option>Roofing - Barn / Agricultural</option>
+              <option>Roofing - Residential Replacement</option>
+              <option>Siding</option>
+              <option>Gutters</option>
+              <option>Multiple Services</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-secondary uppercase tracking-wider mb-1.5">Message</label>
+            <textarea rows="4" name="body" placeholder="Tell us about your project..." class="w-full px-4 py-3 rounded-xl border border-outline-variant bg-surface text-on-surface text-sm font-body focus:outline-none focus:ring-2 focus:ring-tertiary-container focus:border-transparent transition-shadow resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-tertiary-container text-on-tertiary-container py-4 rounded-xl font-headline font-bold text-base hover:bg-tertiary-dark transition-colors">
+            Send Message
+          </button>
+
+          <p class="text-[11px] text-on-surface-variant text-center">
+            Or call us directly: <a href="tel:7812589990" class="font-semibold text-secondary hover:text-primary">(781) 258-9990</a>
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Footer ────────────────────────────────────────── -->
+  <footer class="w-full bg-[#0A1020] text-slate-50">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 pt-16 pb-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-2 mb-5">
+          <div class="w-7 h-7 rounded-lg bg-tertiary-container flex items-center justify-center">
+            <span class="material-symbols-outlined text-on-tertiary-container text-[16px]" style="font-variation-settings: 'FILL' 1, 'wght' 700;">roofing</span>
+          </div>
+          <span class="font-headline font-extrabold text-white">Palma Contracting</span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+          Solid craftsmanship and reliable service. Serving the Greater Boston Area and NH since 2009.
+        </p>
+        <p class="text-slate-500 text-xs">Licensed &amp; Insured</p>
+      </div>
+
+      <div>
+        <h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-5 text-white">Services</h4>
+        <ul class="space-y-3">
+          <li><a href="#services" class="text-slate-400 hover:text-white transition-colors text-sm">Roofing</a></li>
+          <li><a href="#services" class="text-slate-400 hover:text-white transition-colors text-sm">Cedar Shake Roofs</a></li>
+          <li><a href="#services" class="text-slate-400 hover:text-white transition-colors text-sm">Barn Roofs</a></li>
+          <li><a href="#services" class="text-slate-400 hover:text-white transition-colors text-sm">Residential Siding</a></li>
+          <li><a href="#services" class="text-slate-400 hover:text-white transition-colors text-sm">Gutters</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-5 text-white">Service Areas</h4>
+        <ul class="space-y-3">
+          <li><span class="text-slate-400 text-sm">Waltham &amp; Burlington</span></li>
+          <li><span class="text-slate-400 text-sm">Newton &amp; Wellesley</span></li>
+          <li><span class="text-slate-400 text-sm">Woburn &amp; Sudbury</span></li>
+          <li><span class="text-slate-400 text-sm">Concord &amp; Somerville</span></li>
+          <li><span class="text-slate-400 text-sm">Greater Boston &amp; NH</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-5 text-white">Contact</h4>
+        <ul class="space-y-4">
+          <li>
+            <a href="tel:7812589990" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm">
+              <span class="material-symbols-outlined text-[16px] text-tertiary">call</span>
+              (781) 258-9990
+            </a>
+          </li>
+          <li>
+            <a href="mailto:palmacontracting@gmail.com" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm">
+              <span class="material-symbols-outlined text-[16px] text-tertiary">mail</span>
+              palmacontracting@gmail.com
+            </a>
+          </li>
+          <li>
+            <p class="flex items-start gap-2 text-slate-400 text-sm">
+              <span class="material-symbols-outlined text-[16px] text-tertiary mt-0.5">location_on</span>
+              314 Sibley Rd.<br />Waltham, MA 02453
+            </p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 md:px-8 py-6 border-t border-white/8 flex flex-col md:flex-row justify-between items-center gap-3">
+      <p class="text-slate-500 text-xs">© 2026 Palma Contracting. All Rights Reserved.</p>
+      <p class="text-slate-500 text-xs">Licensed Roofing Contractor - MA &amp; NH</p>
+    </div>
+  </footer>
+
+  <!-- ─── Mobile Sticky Bottom Bar ──────────────────────── -->
+  <div class="bottom-bar fixed bottom-0 left-0 right-0 z-40 md:hidden bg-surface-container-lowest border-t border-outline-variant px-4 pt-3 pb-3 flex gap-3 shadow-[0_-4px_24px_rgba(15,23,42,0.08)]">
+    <a href="tel:7812589990" class="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl border-2 border-primary font-headline font-bold text-primary text-sm">
+      <span class="material-symbols-outlined text-[18px]">call</span>
+      Call Now
+    </a>
+    <a href="#contact" class="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl bg-tertiary-container text-on-tertiary-container font-headline font-bold text-sm hover:bg-tertiary-dark transition-colors">
+      <span class="material-symbols-outlined text-[18px]">request_quote</span>
+      Get a Quote
+    </a>
+  </div>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('menu-icon');
+
+    function closeMobileMenu() {
+      menu.classList.remove('open');
+      icon.textContent = 'menu';
+      btn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    btn.addEventListener('click', () => {
+      const isOpen = menu.classList.contains('open');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        menu.classList.add('open');
+        icon.textContent = 'close';
+        btn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMobileMenu();
+    });
+  </script>
+
+</body>
+</html>
