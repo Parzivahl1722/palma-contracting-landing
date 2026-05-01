@@ -1,227 +1,273 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Palma Quality Construction | Cinematic Home Systems</title>
-  <meta name="description" content="Interactive GSAP-powered hero animation that explodes a modern house into core components and reassembles with cinematic lighting." />
-  <link rel="stylesheet" href="/dist/output.css" />
+  <title>Summit Ridge Roofing | Layered Protection</title>
+  <meta name="description" content="Scroll-driven exploded house animation for roofing, gutters, skylights, and siding services." />
   <style>
     :root {
-      color-scheme: dark;
-      --bg-1: #04060f;
-      --bg-2: #0c1330;
-      --glow-cyan: #2de4ff;
-      --glow-violet: #9f5bff;
-      --glow-amber: #ffb84d;
+      --bg: #f4f6fa;
+      --surface: #ffffff;
+      --ink: #10233f;
+      --ink-soft: #36516f;
+      --line: #dce4f0;
+      --accent: #173a63;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: "Manrope", system-ui, sans-serif;
-      background: radial-gradient(circle at 50% 20%, #1a2b5f 0%, var(--bg-2) 35%, var(--bg-1) 100%);
-      color: #e9eeff;
-      min-height: 220vh;
-      overflow-x: hidden;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: linear-gradient(180deg, #f8faff 0%, var(--bg) 100%);
+      color: var(--ink);
     }
 
-    .bg-parallax {
-      position: fixed;
-      inset: -20vh -20vw;
-      background:
-        radial-gradient(circle at 25% 20%, rgba(159, 91, 255, 0.18), transparent 40%),
-        radial-gradient(circle at 80% 30%, rgba(45, 228, 255, 0.22), transparent 42%),
-        radial-gradient(circle at 50% 50%, #182449 0%, #060a17 70%);
-      z-index: -2;
-      will-change: transform;
-      transform: translate3d(0, 0, 0) scale(1.08);
+    .site {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
     }
 
-    .hero {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 5rem 1.5rem;
-      perspective: 1400px;
-    }
-
-    .hero-inner {
-      width: min(1100px, 100%);
+    .intro {
+      margin: 0 auto 1.5rem;
+      max-width: 880px;
       text-align: center;
     }
 
-    .eyebrow {
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      font-size: 0.78rem;
-      color: #9ec2ff;
-      margin-bottom: 0.6rem;
-    }
-
-    h1 {
+    .intro h1 {
       margin: 0;
-      font-size: clamp(2.1rem, 4.6vw, 4.5rem);
-      line-height: 1.08;
-      text-shadow: 0 0 30px rgba(45, 228, 255, 0.25);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.12;
+      color: #0d2342;
     }
 
-    .sub {
-      max-width: 780px;
-      margin: 1rem auto 2.2rem;
-      color: #b7c4f6;
-      font-size: clamp(1rem, 2.1vw, 1.24rem);
+    .intro p {
+      margin: .9rem auto 0;
+      max-width: 62ch;
+      color: var(--ink-soft);
     }
 
-    .house-scene {
-      margin-inline: auto;
+    .experience {
+      display: grid;
+      grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+      gap: clamp(1.2rem, 3vw, 3.2rem);
+      align-items: start;
+    }
+
+    .house-pane {
+      position: sticky;
+      top: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 1rem 0;
+    }
+
+    .house-frame {
+      width: min(100%, 620px);
+      aspect-ratio: 4 / 3;
       position: relative;
-      width: min(1000px, 94vw);
-      aspect-ratio: 16 / 10;
+      perspective: 1200px;
       transform-style: preserve-3d;
-      border-radius: 24px;
-      isolation: isolate;
-      cursor: pointer;
+      border-radius: 20px;
+      filter: drop-shadow(0 18px 26px rgba(16, 35, 63, .12));
     }
 
-    .house-piece {
+    .layer {
       position: absolute;
-      inset: 0;
-      background-image: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1800&q=90&fit=crop');
-      background-size: cover;
-      background-position: center;
-      border-radius: 22px;
-      transform-style: preserve-3d;
-      will-change: transform, filter;
-      filter: saturate(1.02) brightness(0.95);
-    }
-
-    .house-piece::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      border: 1px solid rgba(255,255,255,0.18);
-      box-shadow: 0 0 26px rgba(45, 228, 255, 0.22), 0 0 40px rgba(159, 91, 255, 0.16) inset;
-      pointer-events: none;
-      opacity: 0;
-    }
-
-    .piece-roof { clip-path: polygon(8% 14%, 90% 10%, 98% 48%, 3% 52%); }
-    .piece-gutters { clip-path: polygon(4% 49%, 98% 46%, 97% 56%, 4% 60%); }
-    .piece-skylights { clip-path: polygon(58% 24%, 80% 24%, 81% 49%, 54% 50%); }
-    .piece-body { clip-path: polygon(5% 50%, 98% 49%, 98% 97%, 6% 97%); }
-
-    .glow {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(44px);
-      mix-blend-mode: screen;
-      opacity: 0.58;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      transform: translate3d(0, 0, 0);
+      transition: transform .12s linear;
+      user-select: none;
       pointer-events: none;
     }
 
-    .glow-cyan { width: 180px; height: 180px; background: rgba(45, 228, 255, 0.38); top: 20%; left: 16%; }
-    .glow-violet { width: 220px; height: 220px; background: rgba(159, 91, 255, 0.32); right: 10%; top: 12%; }
-    .glow-amber { width: 160px; height: 160px; background: rgba(255, 184, 77, 0.30); bottom: 14%; left: 45%; }
+    .layer--siding { z-index: 1; }
+    .layer--skylights { z-index: 2; }
+    .layer--gutters { z-index: 3; }
+    .layer--roof { z-index: 4; }
 
-    .hint {
-      margin-top: 1rem;
-      color: #9fb0ea;
-      font-size: 0.95rem;
+    .layer--roof {
+      background: linear-gradient(175deg, #2c3646, #171f2b);
+      clip-path: polygon(8% 28%, 72% 16%, 95% 58%, 34% 74%);
+      box-shadow: inset 0 -10px 28px rgba(0,0,0,.25);
     }
 
-    .spacer {
-      height: 110vh;
+    .layer--gutters {
+      background:
+        linear-gradient(#2a3442,#2a3442) 10% 56%/78% 2.6% no-repeat,
+        linear-gradient(#2a3442,#2a3442) 12% 62%/3% 24% no-repeat,
+        linear-gradient(#2a3442,#2a3442) 79% 56%/15% 2.6% no-repeat,
+        linear-gradient(#2a3442,#2a3442) 90% 58%/3% 24% no-repeat;
+    }
+
+    .layer--skylights {
+      background:
+        linear-gradient(145deg, #d9e9f8, #95adc6) 60% 42%/13% 22% no-repeat,
+        linear-gradient(145deg, #d9e9f8, #95adc6) 75% 47%/12% 20% no-repeat,
+        linear-gradient(175deg, #b99360, #9a784f) 22% 52%/64% 23% no-repeat;
+      clip-path: polygon(14% 44%, 84% 44%, 91% 80%, 11% 80%);
+    }
+
+    .layer--siding {
+      background:
+        repeating-linear-gradient(180deg, #d3d2cf 0 2.8%, #c8c7c4 2.8% 6%) 0 8%/100% 80% no-repeat,
+        linear-gradient(#8e8f92, #78797b) 0 84%/100% 16% no-repeat;
+      clip-path: polygon(10% 47%, 86% 47%, 94% 90%, 4% 92%);
+      border-radius: 8px;
+    }
+
+    .content-col {
+      display: grid;
+      gap: 1.15rem;
+      padding-bottom: 16vh;
+    }
+
+    .step {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .panel {
+      width: 100%;
+      background: rgba(255,255,255,.88);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 1.35rem 1.2rem;
+      backdrop-filter: blur(2px);
+      box-shadow: 0 14px 40px rgba(16, 35, 63, .08);
+    }
+
+    .panel h2 {
+      margin: 0 0 .55rem;
+      font-size: clamp(1.4rem, 2vw, 1.9rem);
+      letter-spacing: .01em;
+      color: var(--accent);
+    }
+
+    .panel p {
+      margin: 0;
+      line-height: 1.62;
+      color: var(--ink-soft);
+    }
+
+    @media (max-width: 900px) {
+      .experience {
+        grid-template-columns: 1fr;
+      }
+
+      .house-pane {
+        position: relative;
+        min-height: auto;
+        top: auto;
+      }
+
+      .step {
+        min-height: auto;
+      }
+
+      .panel { margin-bottom: .8rem; }
     }
   </style>
 </head>
 <body>
-  <div class="bg-parallax" aria-hidden="true"></div>
+  <main class="site">
+    <header class="intro">
+      <h1>Roofing Systems Built Layer by Layer</h1>
+      <p>Scroll down to see how Summit Ridge protects every home. As each section comes into view, the house layers lift apart in sequence so you can inspect every component from top to bottom.</p>
+    </header>
 
-  <main>
-    <section class="hero" id="hero">
-      <div class="hero-inner">
-        <p class="eyebrow">Palma Quality Construction</p>
-        <h1>Precision Home Components.<br/>Cinematic System View.</h1>
-        <p class="sub">Hover or scroll to trigger a GSAP-driven 3D disassembly: roof, gutters, skylights, and siding float outward with glowing edge lighting, then lock back into a complete structure.</p>
-
-        <div class="house-scene" id="houseScene" aria-label="Exploded house animation">
-          <div class="glow glow-cyan"></div>
-          <div class="glow glow-violet"></div>
-          <div class="glow glow-amber"></div>
-          <div class="house-piece piece-roof" data-piece="roof"></div>
-          <div class="house-piece piece-gutters" data-piece="gutters"></div>
-          <div class="house-piece piece-skylights" data-piece="skylights"></div>
-          <div class="house-piece piece-body" data-piece="body"></div>
+    <section class="experience" id="experience">
+      <div class="house-pane">
+        <div class="house-frame" aria-label="Exploded house illustration">
+          <div class="layer layer--siding" data-layer="siding" role="img" aria-label="House siding layer"></div>
+          <div class="layer layer--skylights" data-layer="skylights" role="img" aria-label="House skylight layer"></div>
+          <div class="layer layer--gutters" data-layer="gutters" role="img" aria-label="House gutters layer"></div>
+          <div class="layer layer--roof" data-layer="roof" role="img" aria-label="House roof layer"></div>
         </div>
-        <p class="hint">Scroll into view or hover over the house to explode and reassemble.</p>
+      </div>
+
+      <div class="content-col">
+        <section class="step" data-step="roof">
+          <article class="panel">
+            <h2>Roof</h2>
+            <p>Our premium roofing systems are engineered to shield your home from wind, rain, and long-term UV wear. We install architectural shingles with precision flashing details for dependable weather sealing. Every roof is backed by material and workmanship protection for true peace of mind.</p>
+          </article>
+        </section>
+
+        <section class="step" data-step="gutters">
+          <article class="panel">
+            <h2>Gutters</h2>
+            <p>Seamless gutter runs channel stormwater away before it can pool at your foundation or fascia. We size downspouts to match your roof area and local rainfall intensity for clean drainage. Guard options help minimize clogs and reduce routine maintenance.</p>
+          </article>
+        </section>
+
+        <section class="step" data-step="skylights">
+          <article class="panel">
+            <h2>Skylights</h2>
+            <p>Modern skylight systems bring balanced natural light into kitchens, lofts, and living spaces without sacrificing efficiency. We integrate flashing kits with your roof pitch to prevent leaks at critical seams. The result is brighter interiors and improved day-to-day comfort.</p>
+          </article>
+        </section>
+
+        <section class="step" data-step="siding">
+          <article class="panel">
+            <h2>Siding</h2>
+            <p>Durable siding completes the envelope by defending framing from moisture while elevating curb appeal. Our crews align courses, trim, and corners for a crisp architectural finish that lasts. You get a cleaner exterior look with long-term protection built in.</p>
+          </article>
+        </section>
       </div>
     </section>
-
-    <section class="spacer" aria-hidden="true"></section>
   </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>
-    gsap.registerPlugin(ScrollTrigger);
+    (() => {
+      const order = ["roof", "gutters", "skylights", "siding"];
+      const lift = { roof: -170, gutters: -130, skylights: -95, siding: -65 };
+      const layerEls = {
+        roof: document.querySelector('[data-layer="roof"]'),
+        gutters: document.querySelector('[data-layer="gutters"]'),
+        skylights: document.querySelector('[data-layer="skylights"]'),
+        siding: document.querySelector('[data-layer="siding"]')
+      };
+      const steps = [...document.querySelectorAll('.step')];
 
-    const scene = document.getElementById('houseScene');
-    const parallaxBg = document.querySelector('.bg-parallax');
-    const roof = scene.querySelector('[data-piece="roof"]');
-    const gutters = scene.querySelector('[data-piece="gutters"]');
-    const skylights = scene.querySelector('[data-piece="skylights"]');
-    const body = scene.querySelector('[data-piece="body"]');
-    const pieces = [roof, gutters, skylights, body];
+      function clamp(v, min, max) { return Math.min(max, Math.max(min, v)); }
 
-    gsap.set(scene, { rotateX: 10, rotateY: -8, transformOrigin: '50% 50%' });
-
-    const explodeTl = gsap.timeline({ paused: true, defaults: { ease: 'power3.inOut' } });
-
-    explodeTl
-      .to(roof, { y: -160, x: -40, z: 200, rotateX: -18, rotateZ: -6, duration: 1.1 }, 0)
-      .to(gutters, { y: -24, x: 70, z: 140, rotateX: 18, rotateZ: 4, duration: 1.0 }, 0)
-      .to(skylights, { y: -90, x: 105, z: 220, rotateY: 12, rotateZ: 8, duration: 1.0 }, 0)
-      .to(body, { y: 120, x: -18, z: -120, rotateX: 8, duration: 1.15 }, 0)
-      .to(pieces, {
-        filter: 'saturate(1.25) brightness(1.12) drop-shadow(0 0 24px rgba(45,228,255,0.55))',
-        duration: 0.85
-      }, 0)
-      .to('.house-piece', { boxShadow: '0 0 28px rgba(45,228,255,0.35), 0 0 48px rgba(159,91,255,0.18)' , duration: 0.6 }, 0);
-
-    scene.addEventListener('mouseenter', () => explodeTl.play());
-    scene.addEventListener('mouseleave', () => explodeTl.reverse());
-
-    ScrollTrigger.create({
-      trigger: '#hero',
-      start: 'top 60%',
-      end: 'bottom 25%',
-      scrub: true,
-      onUpdate: self => {
-        const p = self.progress;
-        explodeTl.progress(p);
-        gsap.to(parallaxBg, {
-          y: p * 90,
-          x: p * -30,
-          scale: 1.08 + p * 0.06,
-          duration: 0.2,
-          overwrite: true
-        });
+      function sectionProgress(el) {
+        const rect = el.getBoundingClientRect();
+        const vh = window.innerHeight;
+        const start = vh * 0.8;
+        const end = vh * 0.2;
+        return clamp((start - rect.top) / (start - end), 0, 1);
       }
-    });
 
-    window.addEventListener('mousemove', (event) => {
-      const x = (event.clientX / window.innerWidth - 0.5) * 10;
-      const y = (event.clientY / window.innerHeight - 0.5) * 10;
-      gsap.to(scene, {
-        rotateY: -8 + x,
-        rotateX: 10 - y,
-        duration: 0.45,
-        ease: 'power2.out'
-      });
-    });
+      function render() {
+        const progressByStep = {};
+        steps.forEach(step => {
+          progressByStep[step.dataset.step] = sectionProgress(step);
+        });
+
+        order.forEach((name, i) => {
+          const current = progressByStep[name] || 0;
+          const priorDone = order.slice(0, i).every(key => (progressByStep[key] || 0) >= 1);
+          const amount = priorDone || i === 0 ? current : 0;
+          const y = lift[name] * amount;
+          const z = 26 * amount;
+          layerEls[name].style.transform = `translate3d(0, ${y}px, ${z}px)`;
+        });
+
+        requestAnimationFrame(render);
+      }
+
+      render();
+    })();
   </script>
 </body>
 </html>
