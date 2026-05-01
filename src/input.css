@@ -40,3 +40,38 @@
 @supports (padding-bottom: env(safe-area-inset-bottom)) {
   .bottom-bar { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
 }
+
+.service-block {
+  background: white;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 18px;
+  padding: 2rem;
+}
+
+.exploded-house .house-piece {
+  position: absolute;
+  left: 5%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8fafc;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 12px rgba(0,0,0,.25);
+  transition: transform .2s linear;
+  box-shadow: 0 22px 40px -18px rgba(15,23,42,.45);
+}
+.exploded-house .roof { top: 2%; height: 27%; clip-path: polygon(2% 100%, 50% 0, 98% 100%); background: linear-gradient(180deg,#374151,#111827); border-radius: 10px; }
+.exploded-house .gutters { top: 35%; height: 8%; border-radius: 99px; background: linear-gradient(90deg,#334155,#0f172a); }
+.exploded-house .skylights { top: 49%; height: 18%; border-radius: 14px; background: repeating-linear-gradient(120deg,#d6b78a 0 10px,#f4dfb8 10px 20px); color:#334155; }
+.exploded-house .siding { top: 70%; height: 24%; border-radius: 12px; background: linear-gradient(180deg,#e5e7eb,#cbd5e1); color:#0f172a; }
+.label { position:absolute; right:0; color:#1e3a5f; border-left:2px solid #1e3a5f; padding-left:12px; }
+.label span { font-weight:800; display:block; }
+.label small { display:block; font-size:12px; opacity:.85; }
+.label-roof{ top:8%; }
+.label-gutters{ top:35%; }
+.label-skylights{ top:53%; }
+.label-siding{ top:77%; }
+@media (max-width: 900px){ .label{display:none;} .exploded-house .house-piece{left:8%; width:84%;} }
+
