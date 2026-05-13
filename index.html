@@ -620,11 +620,7 @@ a  { color: inherit; text-decoration: none; }
   aspect-ratio: 4/3; align-self: start;
 }
 @media (min-width: 768px) { .svc-photo { display: block; } }
-.photo-repair    { background: linear-gradient(160deg,#2A1F1A 0%,#1A1510 60%,#3A2820 100%); width:100%;height:100%; }
-.photo-replace   { background: linear-gradient(160deg,#221A14 0%,#150F0B 60%,#2E2318 100%); width:100%;height:100%; }
-.photo-gutters   { background: linear-gradient(160deg,#1A1E1C 0%,#121512 60%,#222820 100%); width:100%;height:100%; }
-.photo-skylights { background: linear-gradient(160deg,#141822 0%,#0E1218 60%,#1A2030 100%); width:100%;height:100%; }
-.photo-siding    { background: linear-gradient(160deg,#1C1A22 0%,#13121A 60%,#252330 100%); width:100%;height:100%; }
+.svc-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* ─── Why Palma ─── */
 .why-bg { background: var(--ink-warm); }
@@ -1142,9 +1138,8 @@ details[open] .sum-icon { transform: rotate(45deg); }
             <li>Written guarantee on all repair work</li>
           </ul>
         </div>
-        <div class="svc-photo" aria-hidden="true">
-          <!-- INSERT PHOTO: Palma crew repairing flashing on a colonial-style home in Waltham, MA -->
-          <div class="photo-repair"></div>
+        <div class="svc-photo">
+          <img src="images/roof-repair.jpg" alt="Storm-damaged asphalt shingle roof with blown-off shingles and exposed decking - Greater Boston roof repair" width="320" height="240" loading="lazy">
         </div>
       </article>
 
@@ -1161,9 +1156,8 @@ details[open] .sum-icon { transform: rotate(45deg); }
             <li>Ice-and-water shield, ridge vent, drip edge included</li>
           </ul>
         </div>
-        <div class="svc-photo" aria-hidden="true">
-          <!-- INSERT PHOTO: Cedar shake roof installation on a New England home in Greater Boston -->
-          <div class="photo-replace"></div>
+        <div class="svc-photo">
+          <img src="images/roof-replacement.jpg" alt="Completed asphalt shingle roof replacement on a New England Cape Cod home surrounded by fall foliage" width="320" height="240" loading="lazy">
         </div>
       </article>
 
@@ -1180,9 +1174,8 @@ details[open] .sum-icon { transform: rotate(45deg); }
             <li>Often completed alongside roof replacement in one trip</li>
           </ul>
         </div>
-        <div class="svc-photo" aria-hidden="true">
-          <!-- INSERT PHOTO: Seamless aluminum gutter installation on a Greater Boston home -->
-          <div class="photo-gutters"></div>
+        <div class="svc-photo">
+          <img src="images/gutters.jpg" alt="New seamless aluminum gutter and downspout installation on a Greater Boston home" width="320" height="240" loading="lazy">
         </div>
       </article>
 
@@ -1199,9 +1192,8 @@ details[open] .sum-icon { transform: rotate(45deg); }
             <li>Fixed, venting, and tubular styles</li>
           </ul>
         </div>
-        <div class="svc-photo" aria-hidden="true">
-          <!-- INSERT PHOTO: Skylight installation with proper step flashing on a Boston-area home -->
-          <div class="photo-skylights"></div>
+        <div class="svc-photo">
+          <img src="images/skylights.jpg" alt="Two skylights installed on an asphalt shingle roof with proper step flashing - Greater Boston skylight installation" width="320" height="240" loading="lazy">
         </div>
       </article>
 
@@ -1218,9 +1210,8 @@ details[open] .sum-icon { transform: rotate(45deg); }
             <li>Houses in Waltham, Newton, Burlington, and surrounding towns</li>
           </ul>
         </div>
-        <div class="svc-photo" aria-hidden="true">
-          <!-- INSERT PHOTO: Fiber cement siding installation on a New England colonial home -->
-          <div class="photo-siding"></div>
+        <div class="svc-photo">
+          <img src="images/siding.jpg" alt="Before and after siding replacement - deteriorated wood siding replaced with new gray vinyl siding on a colonial home" width="320" height="240" loading="lazy">
         </div>
       </article>
 
