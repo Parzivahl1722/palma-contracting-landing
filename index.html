@@ -334,8 +334,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
-  background: #100D0B;
-  color: #EDE8DE;
+  background: #F2EDE3;
+  color: #1C1510;
   font-family: Georgia, 'Times New Roman', serif;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -346,12 +346,12 @@ body {
 
 /* ─── Custom Properties ─── */
 :root {
-  --ink: #100D0B;
-  --ink-warm: #17130F;
-  --ink-deep: #0A0806;
-  --parchment: #EDE8DE;
-  --muted: #A89E90;
-  --border: #2A231D;
+  --ink: #F2EDE3;
+  --ink-warm: #E8E2D6;
+  --ink-deep: #DDD7CB;
+  --parchment: #1C1510;
+  --muted: #6B5F52;
+  --border: #CFC8BC;
   --brick: #8B2500;
   --brick-h: #A82D00;
   --brick-dim: rgba(139,37,0,0.12);
@@ -420,7 +420,7 @@ a  { color: inherit; text-decoration: none; }
 /* ─── Navigation ─── */
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(16,13,11,0.95);
+  background: rgba(242,237,227,0.96);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
@@ -520,7 +520,7 @@ a  { color: inherit; text-decoration: none; }
   position: absolute; inset: 0;
   background: repeating-linear-gradient(
     -45deg, transparent, transparent 2px,
-    rgba(255,255,255,0.011) 2px, rgba(255,255,255,0.011) 3px
+    rgba(0,0,0,0.022) 2px, rgba(0,0,0,0.022) 3px
   );
   pointer-events: none;
 }
@@ -675,7 +675,7 @@ a  { color: inherit; text-decoration: none; }
 }
 .why-photo-wrap {
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg,#201814 0%,#161210 50%,#2A201A 100%);
+  background: linear-gradient(135deg,#D4CCC0 0%,#C8C0B4 50%,#DDD6CA 100%);
   border-radius: 2px; margin-top: 0.5rem;
   position: relative;
 }
@@ -940,7 +940,7 @@ details[open] .sum-icon { transform: rotate(45deg); }
 .f-group input:focus, .f-group select:focus, .f-group textarea:focus {
   border-color: rgba(245,240,232,0.45);
 }
-.f-group select option { background: #2A1A10; color: #EDE8DE; }
+.f-group select option { background: #F2EDE3; color: #1C1510; }
 .f-group textarea { resize: none; }
 .btn-form {
   width: 100%; background: #F5F0E8; color: var(--brick);
