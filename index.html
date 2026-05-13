@@ -13,7 +13,6 @@
 <meta property="og:url" content="https://www.palmacontractingne.com/">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Palma Contracting">
-<!-- Ensure robots.txt allows GPTBot, PerplexityBot, ClaudeBot, anthropic-ai, Google-Extended, and Bingbot -->
 
 <script type="application/ld+json">
 {
@@ -1504,7 +1503,7 @@ details[open] .sum-icon { transform: rotate(45deg); }
         </div>
       </details>
 
-      <details>
+      <details open>
         <summary>
           <h3>Is Palma Contracting licensed and insured?</h3>
           <svg class="sum-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -1517,7 +1516,7 @@ details[open] .sum-icon { transform: rotate(45deg); }
         </div>
       </details>
 
-      <details>
+      <details open>
         <summary>
           <h3>What towns does Palma Contracting serve?</h3>
           <svg class="sum-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -1530,7 +1529,7 @@ details[open] .sum-icon { transform: rotate(45deg); }
         </div>
       </details>
 
-      <details>
+      <details open>
         <summary>
           <h3>How long does a typical roof replacement take?</h3>
           <svg class="sum-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -1543,7 +1542,7 @@ details[open] .sum-icon { transform: rotate(45deg); }
         </div>
       </details>
 
-      <details>
+      <details open>
         <summary>
           <h3>What's the best time of year for roof replacement in Massachusetts?</h3>
           <svg class="sum-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -1556,7 +1555,7 @@ details[open] .sum-icon { transform: rotate(45deg); }
         </div>
       </details>
 
-      <details>
+      <details open>
         <summary>
           <h3>What roofing materials hold up best against New England snow?</h3>
           <svg class="sum-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -1569,7 +1568,7 @@ details[open] .sum-icon { transform: rotate(45deg); }
         </div>
       </details>
 
-      <details>
+      <details open>
         <summary>
           <h3>How often should gutters be replaced?</h3>
           <svg class="sum-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -1582,7 +1581,7 @@ details[open] .sum-icon { transform: rotate(45deg); }
         </div>
       </details>
 
-      <details>
+      <details open>
         <summary>
           <h3>How do I get a free estimate from Palma Contracting?</h3>
           <svg class="sum-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -1815,591 +1814,9 @@ details[open] .sum-icon { transform: rotate(45deg); }
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-      .house-pane {
-        position: relative; height: auto;
-        padding: 40px 0 20px;
-      }
-      .content-col { padding: 0; }
-      .step { min-height: auto; padding: 40px 0; }
-      .stats-inner { grid-template-columns: repeat(2, 1fr); }
-      .stat { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
-      .stat:nth-child(2n) { border-bottom: none; }
-      .cta-section, footer { padding: 60px 24px; }
-      footer { flex-direction: column; gap: 8px; text-align: center; }
-    }
-    @media (max-width: 500px) {
-      .stats-inner { grid-template-columns: 1fr 1fr; }
-    }
-  </style>
-</head>
-<body>
-
-<!-- Progress bar -->
-<div id="progress-bar"><div id="progress-fill"></div></div>
-
-<!-- Nav -->
-<nav>
-  <a href="#" class="nav-logo">Palma<span>.</span></a>
-  <ul class="nav-links">
-    <li><a href="#section-roof">Roofing</a></li>
-    <li><a href="#section-gutters">Gutters</a></li>
-    <li><a href="#section-skylights">Skylights</a></li>
-    <li><a href="#section-siding">Siding</a></li>
-  </ul>
-  <a href="tel:+17815550189" class="nav-phone">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-    </svg>
-    (781) 555-0189
-  </a>
-</nav>
-
-<!-- Hero -->
-<section class="hero">
-  <p class="hero-eyebrow">Waltham, MA · Serving Greater Boston Since 2009</p>
-  <h1>Every Layer of Your Home,<br><em>Done Right.</em></h1>
-  <p class="hero-sub">Palma Contracting installs and replaces roofing, gutters, skylights, and siding for homeowners across Newton, Lexington, Needham, and the surrounding suburbs.</p>
-  <div class="hero-trust">
-    <span class="trust-chip">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      Licensed &amp; Insured
-    </span>
-    <span class="trust-chip">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      4.9 · 300+ Reviews
-    </span>
-    <span class="trust-chip">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-      Free Estimates
-    </span>
-  </div>
-  <div class="hero-ctas">
-    <a href="tel:+17815550189" class="btn-cta primary">Call for a Free Estimate</a>
-    <a href="#section-roof" class="btn-cta outline">Explore Our Services ↓</a>
-  </div>
-  <div class="scroll-nudge">
-    <span>Scroll to explore</span>
-    <div class="scroll-nudge-arrow"></div>
-  </div>
-</section>
-
-<!-- Scroll experience -->
-<div class="experience" id="experience">
-
-  <!-- Left: Sticky house illustration -->
-  <div class="house-pane">
-    <div class="house-frame">
-
-      <!-- House SVG with 4 animated layers -->
-      <svg id="house-svg" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg" aria-label="Exploded house illustration showing four building layers">
-        <defs>
-          <!-- Shingle pattern for roof -->
-          <pattern id="pat-shingles" x="0" y="0" width="48" height="28" patternUnits="userSpaceOnUse">
-            <rect width="48" height="28" fill="#23293a"/>
-            <rect x="1" y="1"  width="21" height="13" rx="0.5" fill="#2e3648"/>
-            <rect x="25" y="1" width="21" height="13" rx="0.5" fill="#283040"/>
-            <rect x="0" y="13" width="48" height="3"  fill="#161c2a" opacity="0.55"/>
-            <rect x="-11" y="16" width="21" height="12" rx="0.5" fill="#2b3344"/>
-            <rect x="13"  y="16" width="21" height="12" rx="0.5" fill="#2e3648"/>
-            <rect x="37"  y="16" width="11" height="12" rx="0.5" fill="#283040"/>
-            <rect x="0" y="27" width="48" height="1" fill="#161c2a" opacity="0.4"/>
-          </pattern>
-
-          <!-- Siding (horizontal lap boards) -->
-          <pattern id="pat-siding" x="0" y="0" width="700" height="13" patternUnits="userSpaceOnUse">
-            <rect width="700" height="13" fill="#d5d0c6"/>
-            <rect y="10"  width="700" height="3" fill="#bfbab2"/>
-            <rect y="12"  width="700" height="1" fill="#aba69e" opacity="0.7"/>
-          </pattern>
-
-          <!-- Stone / foundation -->
-          <pattern id="pat-stone" x="0" y="0" width="68" height="34" patternUnits="userSpaceOnUse">
-            <rect width="68" height="34" fill="#80858e"/>
-            <rect x="2"  y="2"  width="30" height="14" rx="1" fill="#898f98" stroke="#70757e" stroke-width="0.5"/>
-            <rect x="35" y="2"  width="28" height="14" rx="1" fill="#838890" stroke="#70757e" stroke-width="0.5"/>
-            <rect x="2"  y="18" width="18" height="14" rx="1" fill="#868b94" stroke="#70757e" stroke-width="0.5"/>
-            <rect x="23" y="18" width="30" height="14" rx="1" fill="#80858e" stroke="#70757e" stroke-width="0.5"/>
-            <rect x="56" y="18" width="10" height="14" rx="1" fill="#838890" stroke="#70757e" stroke-width="0.5"/>
-          </pattern>
-
-          <!-- Glass gradient for windows & skylights -->
-          <linearGradient id="grad-glass" x1="0" y1="0" x2="0.6" y2="1">
-            <stop offset="0%"   stop-color="#c8e0f5" stop-opacity="0.95"/>
-            <stop offset="35%"  stop-color="#ddeeff" stop-opacity="0.98"/>
-            <stop offset="100%" stop-color="#8ab8d8" stop-opacity="0.88"/>
-          </linearGradient>
-          <linearGradient id="grad-glass-sky" x1="0" y1="0" x2="0.5" y2="1">
-            <stop offset="0%"   stop-color="#d0e9ff" stop-opacity="0.97"/>
-            <stop offset="50%"  stop-color="#b8d5f2" stop-opacity="0.95"/>
-            <stop offset="100%" stop-color="#7aaece" stop-opacity="0.9"/>
-          </linearGradient>
-
-          <!-- Soft drop shadow for lifted layers -->
-          <filter id="filt-lift" x="-15%" y="-15%" width="130%" height="130%">
-            <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.22"/>
-          </filter>
-
-          <!-- Subtle ambient shadow (non-lifted) -->
-          <filter id="filt-ambient" x="-5%" y="-5%" width="110%" height="110%">
-            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.10"/>
-          </filter>
-
-          <!-- Gutter gradient -->
-          <linearGradient id="grad-gutter" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%"   stop-color="#3d4a5c"/>
-            <stop offset="100%" stop-color="#252e3a"/>
-          </linearGradient>
-        </defs>
-
-        <!-- Ground ellipse shadow -->
-        <ellipse cx="350" cy="472" rx="200" ry="14" fill="#0f172a" opacity="0.06"/>
-
-        <!-- ══════════════════════════════════════════════════
-             LAYER 1 — SIDING
-             (drawn first = at back of z-order)
-             Lifts last.
-        ════════════════════════════════════════════════════ -->
-        <g id="layer-siding" class="house-layer" filter="url(#filt-ambient)" style="will-change:transform;">
-          <!-- Foundation -->
-          <rect x="112" y="418" width="476" height="46" rx="2" fill="url(#pat-stone)"/>
-          <rect x="112" y="418" width="476" height="46" rx="2" fill="none" stroke="#68707a" stroke-width="1"/>
-
-          <!-- Main wall -->
-          <rect x="112" y="220" width="476" height="200" fill="url(#pat-siding)"/>
-          <rect x="112" y="220" width="476" height="200" fill="none" stroke="#bfbab4" stroke-width="1"/>
-
-          <!-- Trim board at wall top -->
-          <rect x="108" y="216" width="484" height="8" rx="1" fill="#e8e4dc"/>
-
-          <!-- ── Windows ── -->
-          <!-- Win 1 (far left) -->
-          <rect x="128" y="258" width="74" height="80" rx="2" fill="#1a1f2e" stroke="#e8e4dc" stroke-width="3.5"/>
-          <line x1="165" y1="261" x2="165" y2="336" stroke="#e8e4dc" stroke-width="1.5"/>
-          <line x1="128" y1="298" x2="202" y2="298" stroke="#e8e4dc" stroke-width="1.5"/>
-          <rect x="132" y="262" width="13" height="28" rx="1" fill="#fff" opacity="0.05"/>
-          <!-- Win 1 sill/header -->
-          <rect x="123" y="254" width="84" height="6" rx="1" fill="#e8e4dc"/>
-          <rect x="123" y="338" width="84" height="5" rx="1" fill="#e8e4dc"/>
-
-          <!-- Win 2 -->
-          <rect x="224" y="258" width="74" height="80" rx="2" fill="#1a1f2e" stroke="#e8e4dc" stroke-width="3.5"/>
-          <line x1="261" y1="261" x2="261" y2="336" stroke="#e8e4dc" stroke-width="1.5"/>
-          <line x1="224" y1="298" x2="298" y2="298" stroke="#e8e4dc" stroke-width="1.5"/>
-          <rect x="228" y="262" width="13" height="28" rx="1" fill="#fff" opacity="0.05"/>
-          <rect x="219" y="254" width="84" height="6" rx="1" fill="#e8e4dc"/>
-          <rect x="219" y="338" width="84" height="5" rx="1" fill="#e8e4dc"/>
-
-          <!-- Left column -->
-          <rect x="314" y="220" width="14" height="196" rx="2" fill="#ece8e0"/>
-          <rect x="311" y="215" width="20" height="9" rx="2" fill="#dedad2"/>
-          <rect x="311" y="414" width="20" height="8" rx="2" fill="#dedad2"/>
-
-          <!-- Right column -->
-          <rect x="372" y="220" width="14" height="196" rx="2" fill="#ece8e0"/>
-          <rect x="369" y="215" width="20" height="9" rx="2" fill="#dedad2"/>
-          <rect x="369" y="414" width="20" height="8" rx="2" fill="#dedad2"/>
-
-          <!-- Door (between columns) -->
-          <rect x="322" y="310" width="56" height="106" rx="2" fill="#111827" stroke="#222" stroke-width="1"/>
-          <rect x="327" y="316" width="20" height="34" rx="1.5" fill="#1f2937" stroke="#2d3748" stroke-width="0.5"/>
-          <rect x="353" y="316" width="20" height="34" rx="1.5" fill="#1f2937" stroke="#2d3748" stroke-width="0.5"/>
-          <rect x="327" y="356" width="20" height="53" rx="1.5" fill="#1f2937" stroke="#2d3748" stroke-width="0.5"/>
-          <rect x="353" y="356" width="20" height="53" rx="1.5" fill="#1f2937" stroke="#2d3748" stroke-width="0.5"/>
-          <!-- Door handle -->
-          <circle cx="348" cy="368" r="4.5" fill="#d97706"/>
-          <!-- Door sidelight / transom -->
-          <rect x="322" y="300" width="56" height="12" rx="1.5" fill="#151e30"/>
-          <rect x="326" y="302" width="48" height="8" rx="1" fill="url(#grad-glass)" opacity="0.5"/>
-          <!-- Door header & sill trim -->
-          <rect x="316" y="296" width="68" height="7" rx="1" fill="#dedad2"/>
-
-          <!-- Win 3 (right of door) -->
-          <rect x="404" y="258" width="74" height="80" rx="2" fill="#1a1f2e" stroke="#e8e4dc" stroke-width="3.5"/>
-          <line x1="441" y1="261" x2="441" y2="336" stroke="#e8e4dc" stroke-width="1.5"/>
-          <line x1="404" y1="298" x2="478" y2="298" stroke="#e8e4dc" stroke-width="1.5"/>
-          <rect x="408" y="262" width="13" height="28" rx="1" fill="#fff" opacity="0.05"/>
-          <rect x="399" y="254" width="84" height="6" rx="1" fill="#e8e4dc"/>
-          <rect x="399" y="338" width="84" height="5" rx="1" fill="#e8e4dc"/>
-
-          <!-- Win 4 (far right, smaller) -->
-          <rect x="506" y="268" width="54" height="64" rx="2" fill="#1a1f2e" stroke="#e8e4dc" stroke-width="3"/>
-          <line x1="533" y1="271" x2="533" y2="330" stroke="#e8e4dc" stroke-width="1.5"/>
-          <line x1="506" y1="300" x2="560" y2="300" stroke="#e8e4dc" stroke-width="1.5"/>
-          <rect x="501" y="264" width="64" height="6" rx="1" fill="#e8e4dc"/>
-          <rect x="501" y="332" width="64" height="5" rx="1" fill="#e8e4dc"/>
-
-          <!-- Porch beam / header connecting columns -->
-          <rect x="306" y="220" width="88" height="7" rx="1.5" fill="#dedad2"/>
-
-          <!-- Steps -->
-          <rect x="308" y="460" width="84" height="12" rx="2" fill="#ccc8c0"/>
-          <rect x="314" y="462" width="72" height="10" rx="1" fill="#c4c0b8"/>
-        </g>
-
-        <!-- ══════════════════════════════════════════════════
-             LAYER 2 — SKYLIGHTS
-             (drawn second = above siding, below gutters)
-             Lifts third.
-        ════════════════════════════════════════════════════ -->
-        <g id="layer-skylights" class="house-layer" filter="url(#filt-ambient)" style="will-change:transform;">
-          <!--
-            Skylights sit on the right roof slope.
-            Slope runs from apex (350,38) to right eave (625,222).
-            Slope vector: (275,184), length ≈ 330.
-            Unit: (0.832, 0.557). Normal (up-left): (-0.557, 0.832)
-            Skylight 1 center: ~(448, 140)
-            Skylight 2 center: ~(504, 178)
-            Half-dims: along=32, across=22
-          -->
-          <!-- Skylight 1 frame -->
-          <polygon points="418,107 476,146 456,179 399,140" fill="#252c38" stroke="#1a2030" stroke-width="1.5"/>
-          <!-- Skylight 1 glass -->
-          <polygon points="422,112 470,148 451,174 403,145" fill="url(#grad-glass-sky)"/>
-          <!-- Skylight 1 center divider (along slope) -->
-          <line x1="437" y1="110" x2="460" y2="177" stroke="#252c38" stroke-width="2"/>
-          <!-- Skylight 1 reflection -->
-          <polygon points="424,113 434,120 428,133 418,127" fill="#fff" opacity="0.18"/>
-
-          <!-- Skylight 2 frame -->
-          <polygon points="472,143 530,181 510,214 453,176" fill="#252c38" stroke="#1a2030" stroke-width="1.5"/>
-          <!-- Skylight 2 glass -->
-          <polygon points="476,148 524,183 505,210 457,180" fill="url(#grad-glass-sky)"/>
-          <!-- Skylight 2 center divider -->
-          <line x1="491" y1="146" x2="514" y2="213" stroke="#252c38" stroke-width="2"/>
-          <!-- Skylight 2 reflection -->
-          <polygon points="478,149 488,157 482,169 472,163" fill="#fff" opacity="0.18"/>
-        </g>
-
-        <!-- ══════════════════════════════════════════════════
-             LAYER 3 — GUTTERS
-             (drawn third = above skylights, below roof)
-             Lifts second.
-        ════════════════════════════════════════════════════ -->
-        <g id="layer-gutters" class="house-layer" filter="url(#filt-ambient)" style="will-change:transform;">
-          <!-- Main gutter channel -->
-          <rect x="79" y="215" width="542" height="13" rx="2" fill="url(#grad-gutter)"/>
-          <rect x="79" y="215" width="542" height="5" rx="2" fill="#4b5568"/>
-          <rect x="79" y="215" width="542" height="13" rx="2" fill="none" stroke="#1f2837" stroke-width="0.75"/>
-
-          <!-- End caps -->
-          <rect x="74" y="213" width="9" height="17" rx="2" fill="#374151" stroke="#1f2837" stroke-width="0.75"/>
-          <rect x="617" y="213" width="9" height="17" rx="2" fill="#374151" stroke="#1f2837" stroke-width="0.75"/>
-
-          <!-- Gutter hangers / spikes -->
-          <rect x="128" y="217" width="3" height="9" fill="#1f2837" opacity="0.6"/>
-          <rect x="210" y="217" width="3" height="9" fill="#1f2837" opacity="0.6"/>
-          <rect x="292" y="217" width="3" height="9" fill="#1f2837" opacity="0.6"/>
-          <rect x="374" y="217" width="3" height="9" fill="#1f2837" opacity="0.6"/>
-          <rect x="456" y="217" width="3" height="9" fill="#1f2837" opacity="0.6"/>
-          <rect x="540" y="217" width="3" height="9" fill="#1f2837" opacity="0.6"/>
-
-          <!-- Right downspout (vertical) -->
-          <rect x="617" y="227" width="14" height="210" rx="2" fill="#2d3748"/>
-          <rect x="618" y="227" width="7" height="210" rx="1" fill="#374151"/>
-
-          <!-- Downspout elbow -->
-          <path d="M617,437 Q617,454 600,454" fill="none" stroke="#2d3748" stroke-width="14" stroke-linecap="round"/>
-          <path d="M600,454 L568,454" fill="none" stroke="#2d3748" stroke-width="14" stroke-linecap="round"/>
-
-          <!-- Left downspout (shorter, partial) -->
-          <rect x="74" y="227" width="12" height="170" rx="2" fill="#2d3748"/>
-          <rect x="75" y="227" width="6" height="170" rx="1" fill="#374151"/>
-          <path d="M74,397 Q74,413 90,413" fill="none" stroke="#2d3748" stroke-width="12" stroke-linecap="round"/>
-          <path d="M90,413 L116,413" fill="none" stroke="#2d3748" stroke-width="12" stroke-linecap="round"/>
-        </g>
-
-        <!-- ══════════════════════════════════════════════════
-             LAYER 4 — ROOF
-             (drawn last = visually on top)
-             Lifts first.
-        ════════════════════════════════════════════════════ -->
-        <g id="layer-roof" class="house-layer" filter="url(#filt-ambient)" style="will-change:transform;">
-          <!-- Left slope (slightly lighter) -->
-          <polygon points="75,222 350,38 350,222" fill="url(#pat-shingles)"/>
-
-          <!-- Right slope (same pattern, darkened for depth) -->
-          <polygon points="350,38 625,222 350,222" fill="url(#pat-shingles)"/>
-          <!-- Right slope depth shadow -->
-          <polygon points="350,38 625,222 350,222" fill="#000" opacity="0.13"/>
-
-          <!-- Roof outline -->
-          <polyline points="75,222 350,38 625,222" fill="none" stroke="#13181f" stroke-width="2"/>
-
-          <!-- Ridge cap -->
-          <line x1="350" y1="38" x2="350" y2="222" stroke="#13181f" stroke-width="2" opacity="0.4"/>
-          <rect x="344" y="32" width="12" height="14" rx="6" fill="#1f2635"/>
-
-          <!-- Fascia board (eave trim) -->
-          <rect x="71" y="217" width="558" height="9" rx="1.5" fill="#e8e4da"/>
-
-          <!-- Soffit underside hint -->
-          <polygon points="75,222 112,222 350,48 588,222 625,222 625,228 350,45 75,228" fill="#d4d0c8" opacity="0.35"/>
-
-          <!-- ── Dormer (gable center) ── -->
-          <!-- Dormer back wall / siding -->
-          <rect x="310" y="128" width="80" height="66" fill="url(#pat-siding)"/>
-          <rect x="310" y="128" width="80" height="66" fill="none" stroke="#bfbab4" stroke-width="0.75"/>
-          <!-- Dormer corner trim -->
-          <rect x="308" y="128" width="6" height="66" fill="#ece8e0"/>
-          <rect x="386" y="128" width="6" height="66" fill="#ece8e0"/>
-          <!-- Dormer gable roof (tiny pitched) -->
-          <polygon points="304,128 350,100 396,128" fill="url(#pat-shingles)"/>
-          <polyline points="304,128 350,100 396,128" fill="none" stroke="#13181f" stroke-width="1.5"/>
-          <!-- Dormer fascia -->
-          <rect x="300" y="124" width="100" height="7" rx="1" fill="#e8e4da"/>
-          <!-- Dormer window -->
-          <rect x="320" y="138" width="60" height="48" rx="2" fill="#1a1f2e" stroke="#e8e4dc" stroke-width="2.5"/>
-          <line x1="350" y1="141" x2="350" y2="183" stroke="#e8e4dc" stroke-width="1.5"/>
-          <line x1="320" y1="162" x2="380" y2="162" stroke="#e8e4dc" stroke-width="1.5"/>
-          <rect x="324" y="142" width="11" height="18" rx="1" fill="#fff" opacity="0.06"/>
-          <!-- Dormer header/sill -->
-          <rect x="316" y="134" width="68" height="6" rx="1" fill="#dedad2"/>
-          <rect x="316" y="186" width="68" height="5" rx="1" fill="#dedad2"/>
-        </g>
-
-      </svg><!-- end SVG -->
-
-      <!-- Floating layer callout labels -->
-      <div class="hlabels" aria-hidden="true">
-        <div class="hlabel hlabel--roof"      id="hlabel-roof">
-          <div class="hlabel-dot"></div>
-          <div class="hlabel-line"></div>
-          <div class="hlabel-text">Roof</div>
-        </div>
-        <div class="hlabel hlabel--gutters"   id="hlabel-gutters">
-          <div class="hlabel-dot"></div>
-          <div class="hlabel-line"></div>
-          <div class="hlabel-text">Gutters</div>
-        </div>
-        <div class="hlabel hlabel--skylights" id="hlabel-skylights">
-          <div class="hlabel-dot"></div>
-          <div class="hlabel-line"></div>
-          <div class="hlabel-text">Skylights</div>
-        </div>
-        <div class="hlabel hlabel--siding"    id="hlabel-siding">
-          <div class="hlabel-dot"></div>
-          <div class="hlabel-line"></div>
-          <div class="hlabel-text">Siding</div>
-        </div>
-      </div>
-    </div><!-- .house-frame -->
-  </div><!-- .house-pane -->
-
-  <!-- Right: Scrollable content -->
-  <div class="content-col" id="content-col">
-
-    <!-- Intro step -->
-    <div class="step step--intro">
-      <div>
-        <h2>Built right,<br>from top to bottom.</h2>
-        <p>Scroll down to see how Palma Contracting approaches each layer of your home's exterior — and learn what separates a job done well from one that lasts 30 years.</p>
-      </div>
-    </div>
-
-    <!-- Step 1 — Roof -->
-    <section class="step" id="section-roof" data-step="roof">
-      <article class="panel">
-        <p class="panel-num">Layer 01 — Roof</p>
-        <h2>Your Home's<br>First Defense</h2>
-        <p>Your roof stands between your family and everything the New England climate can throw at it — nor'easters, ice dams, and decades of freeze-thaw cycles. We install premium architectural shingles, metal roofing, and flat-roof systems using manufacturer-certified techniques that keep your warranty fully intact.</p>
-        <p>Every installation starts with a full deck inspection. Damaged sheathing, improper ventilation, and compromised flashing are addressed before the first shingle goes down — not patched over.</p>
-        <ul class="panel-features">
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>30-year architectural shingles, IKO &amp; GAF certified</li>
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Ice &amp; water shield on all eave overhangs</li>
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Full deck inspection — replacement included if needed</li>
-        </ul>
-        <a href="tel:+17815550189" class="panel-link">
-          Schedule a Roof Estimate
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </article>
-    </section>
-
-    <!-- Step 2 — Gutters -->
-    <section class="step" id="section-gutters" data-step="gutters">
-      <article class="panel">
-        <p class="panel-num">Layer 02 — Gutters</p>
-        <h2>Protect What's<br>Below the Roof</h2>
-        <p>Most foundation and siding damage in Greater Boston traces back to water that had nowhere to go. Undersized gutters, improper slope, or failed seams send rainwater straight into your fascia boards and down your foundation walls. We size and install seamless aluminum gutter systems fabricated on-site to your home's exact measurements.</p>
-        <p>Downspout positioning is calculated for your specific lot — not placed where it's easiest. The result is clean drainage that protects your landscaping and foundation for years.</p>
-        <ul class="panel-features">
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Seamless aluminum — no joints to fail</li>
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Hidden hanger system every 24 inches</li>
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>LeafGuard micro-mesh protection available</li>
-        </ul>
-        <a href="tel:+17815550189" class="panel-link">
-          Schedule a Gutter Estimate
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </article>
-    </section>
-
-    <!-- Step 3 — Skylights -->
-    <section class="step" id="section-skylights" data-step="skylights">
-      <article class="panel">
-        <p class="panel-num">Layer 03 — Skylights</p>
-        <h2>Bring the Light<br>In — Leak-Free</h2>
-        <p>A properly installed skylight transforms a kitchen, master bath, or living room without adding square footage. The challenge is the intersection between glass, frame, and roof — that's where most skylights fail. We are VELUX-certified installers, using manufacturer-matched flashing kits designed for your exact roof pitch and shingle profile.</p>
-        <p>Fixed, venting, and solar-powered models are all available. We handle the full project from roof opening to interior drywall finish — no separate sub-trades, no coordination headaches.</p>
-        <ul class="panel-features">
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>VELUX certified — 10-year no-leak guarantee</li>
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Fixed, venting &amp; solar-powered models</li>
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Interior finish included — fully turnkey</li>
-        </ul>
-        <a href="tel:+17815550189" class="panel-link">
-          Schedule a Skylight Estimate
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </article>
-    </section>
-
-    <!-- Step 4 — Siding -->
-    <section class="step" id="section-siding" data-step="siding">
-      <article class="panel">
-        <p class="panel-num">Layer 04 — Siding</p>
-        <h2>Curb Appeal That<br>Works as Hard as You</h2>
-        <p>Your siding is the most visible part of your home — and its most important moisture barrier. Failing or dated siding is more than an eyesore; it lets water into your wall cavities, increasing heating bills and inviting rot. We install vinyl, James Hardie fiber cement, and engineered wood siding systems with properly lapped housewrap and sealed penetrations throughout.</p>
-        <p>Whether you need a full re-side or a targeted repair on storm-damaged sections, we match existing profiles and colors precisely. Our crews leave every site clean — no scrap in the shrubs.</p>
-        <ul class="panel-features">
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>James Hardie &amp; premium vinyl installed</li>
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Insulated options available — R-3 to R-5</li>
-          <li><span class="feat-check"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>All profiles: lap, shake, board &amp; batten</li>
-        </ul>
-        <a href="tel:+17815550189" class="panel-link">
-          Schedule a Siding Estimate
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </article>
-    </section>
-
-  </div><!-- .content-col -->
-</div><!-- .experience -->
-
-<!-- Stats band -->
-<section class="stats-band">
-  <div class="stats-inner">
-    <div class="stat">
-      <div class="stat-num">15<span>+</span></div>
-      <div class="stat-label">Years Serving Boston</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">2,<span>400</span></div>
-      <div class="stat-label">Roofs Installed</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">4.<span>9</span></div>
-      <div class="stat-label">Average Rating</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">100<span>%</span></div>
-      <div class="stat-label">Licensed &amp; Insured</div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA section -->
-<section class="cta-section" id="contact">
-  <p class="cta-eyebrow">Waltham, MA · Free Estimates</p>
-  <h2>Ready to Get It Done Right?</h2>
-  <p>Call us or request a free estimate online. We respond within one business day and can usually schedule a site visit within the week.</p>
-  <div class="cta-actions">
-    <a href="tel:+17815550189" class="btn-orange">Call (781) 555-0189</a>
-    <a href="mailto:estimates@palmacontracting.com" class="btn-ghost">Email for an Estimate</a>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <div class="footer-logo">Palma<span>.</span> Contracting</div>
-  <p>© 2025 Palma Contracting LLC. Waltham, MA. License #CS-108231.</p>
-  <div>
-    <a href="tel:+17815550189">(781) 555-0189</a>
-    &nbsp;·&nbsp;
-    <a href="mailto:estimates@palmacontracting.com">estimates@palmacontracting.com</a>
-  </div>
-</footer>
-
-<script>
-(() => {
-  /* ─── Config ───────────────────────────────────────────── */
-  const ORDER = ['roof', 'gutters', 'skylights', 'siding'];
-
-  // Maximum upward lift in CSS px when fully animated
-  const MAX_LIFT = { roof: -196, gutters: -150, skylights: -108, siding: -70 };
-
-  // Elements
-  const layerEls = {
-    roof:      document.getElementById('layer-roof'),
-    gutters:   document.getElementById('layer-gutters'),
-    skylights: document.getElementById('layer-skylights'),
-    siding:    document.getElementById('layer-siding'),
-  };
-  const labelEls = {
-    roof:      document.getElementById('hlabel-roof'),
-    gutters:   document.getElementById('hlabel-gutters'),
-    skylights: document.getElementById('hlabel-skylights'),
-    siding:    document.getElementById('hlabel-siding'),
-  };
-  const steps = [...document.querySelectorAll('.step[data-step]')];
-  const progressFill = document.getElementById('progress-fill');
-
-  /* ─── Helpers ──────────────────────────────────────────── */
-  function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
-
-  function easeInOutCubic(t) {
-    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-  }
-
-  // Returns 0→1 progress of a step: 1 when the step has fully scrolled through
-  function stepProgress(el) {
-    const rect = el.getBoundingClientRect();
-    const vh   = window.innerHeight;
-    // Start: top of section hits 80% down viewport
-    // End:   top of section hits 20% down viewport (section filled upper portion)
-    const start = vh * 0.80;
-    const end   = vh * 0.20;
-    return clamp((start - rect.top) / (start - end), 0, 1);
-  }
-
-  /* ─── Apply lift shadow ────────────────────────────────── */
-  function setLiftFilter(el, t) {
-    if (t > 0.02) {
-      el.setAttribute('filter', 'url(#filt-lift)');
-    } else {
-      el.setAttribute('filter', 'url(#filt-ambient)');
-    }
-  }
-
-  /* ─── Main render loop ─────────────────────────────────── */
-  function render() {
-    // Overall page scroll progress for progress bar
-    const scrolled = window.scrollY;
-    const docH     = document.documentElement.scrollHeight - window.innerHeight;
-    progressFill.style.width = `${clamp(scrolled / docH * 100, 0, 100)}%`;
-
-    // Per-step progress map
-    const prog = {};
-    steps.forEach(step => { prog[step.dataset.step] = stepProgress(step); });
-
-    ORDER.forEach((name, i) => {
-      const current   = prog[name] || 0;
-      // Each layer only starts after all previous layers have reached 100%
-      const priorDone = ORDER.slice(0, i).every(k => (prog[k] || 0) >= 1);
-      const amount    = (i === 0 || priorDone) ? current : 0;
-      const eased     = easeInOutCubic(amount);
-      const y         = MAX_LIFT[name] * eased;
-      const z         = 30 * eased; // slight Z for 3D depth (perspective on parent)
-
-      layerEls[name].style.transform = `translate3d(0, ${y}px, ${z}px)`;
-      setLiftFilter(layerEls[name], amount);
-
-      // Show label when layer is actively lifting (between 5% and 95% progress)
-      const labelActive = amount > 0.05 && amount < 0.98;
-      labelEls[name].classList.toggle('active', labelActive);
     });
   });
 })();
 </script>
-
 </body>
 </html>

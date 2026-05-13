@@ -22,4 +22,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://palmacontracting.com/sitemap.xml
+Sitemap: https://www.palmacontractingne.com/sitemap.xml
